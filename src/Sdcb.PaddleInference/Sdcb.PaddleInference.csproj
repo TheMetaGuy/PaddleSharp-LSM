@@ -5,8 +5,8 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <LangVersion>preview</LangVersion>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/sdcb/PaddleSharp</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/sdcb/PaddleSharp.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/TheMetaGuy/PaddleSharp-LSM</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TheMetaGuy/PaddleSharp-LSM.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Sdcb;AI;Paddle;OCR;PaddleOCR;PaddleDetection;PaddleSharp</PackageTags>
     <VersionPrefix>2.4.0-rc.0</VersionPrefix>
