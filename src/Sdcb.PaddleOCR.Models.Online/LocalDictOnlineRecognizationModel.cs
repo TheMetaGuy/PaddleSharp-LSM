@@ -50,6 +50,13 @@ public record LocalDictOnlineRecognizationModel(string Name, string DictName, Ur
     public static LocalDictOnlineRecognizationModel ChineseServerV5 => new("PP-OCRv5_server_rec_infer.tar", "", new Uri("https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv5_server_rec_infer.tar"), ModelVersion.V5);
 
     /// <summary>
+    /// v5 model for English recognition
+    /// (Size: 7.6MB)
+    /// </summary>
+    public static LocalDictOnlineRecognizationModel EnglishV5 => new("en_PP-OCRv5_mobile_rec", "en_dict.txt", new Uri("https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/en_PP-OCRv5_mobile_rec_infer.tar"), ModelVersion.V5);
+
+
+    /// <summary>
     /// v4 model for Chinese recognition
     /// (Size: 10.46MB)
     /// </summary>
@@ -236,6 +243,7 @@ public record LocalDictOnlineRecognizationModel(string Name, string DictName, Ur
     {
         ChineseV5,
         ChineseServerV5,
+        EnglishV5,
         ChineseV4,
         EnglishV4,
         KoreanV4,

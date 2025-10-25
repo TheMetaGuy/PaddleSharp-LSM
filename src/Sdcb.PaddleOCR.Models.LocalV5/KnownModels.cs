@@ -14,5 +14,9 @@ public static class KnownModels
     {
         "mobile-zh-det",
         "mobile-zh-rec",
+        "mobile-en-det",
+        "mobile-en-rec",
+        "server-zh-det",
+        "server-zh-rec"
     });
 }
