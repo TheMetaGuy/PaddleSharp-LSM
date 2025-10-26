@@ -56,8 +56,21 @@ public class LocalRecognizationModel : RecognizationModel
 
     /// <summary>
     /// Gets the Chinese V5 local recognition model.
+    /// (Size: 9Mb approx)
     /// </summary>
     public static LocalRecognizationModel ChineseV5 => new("mobile-zh-rec", "", ModelVersion.V5);
+
+    /// <summary>
+    /// Gets the Chinese Server V5 local recognition model.
+    /// (Size: 9Mb approx)
+    /// </summary>
+    public static LocalRecognizationModel ChineseServerV5 => new("server-zh-rec", "", ModelVersion.V5);
+
+    /// <summary>
+    /// v5 model for English recognition
+    /// (Size: 8MB approx)
+    /// </summary>
+    public static LocalRecognizationModel EnglishV5 => new("mobile-en-rec", "en_dict.txt", ModelVersion.V5);
 
     /// <summary>
     /// v4 model for Chinese recognition
@@ -190,17 +203,27 @@ public class LocalRecognizationModel : RecognizationModel
     /// </summary>
     public static LocalRecognizationModel[] All => new[]
     {
+        ChineseV5,
+        ChineseServerV5,
+        EnglishV5,
+        ChineseV4,
         ChineseV3,
         EnglishV3,
+        KoreanV4,
         KoreanV3,
+        JapanV4,
         JapanV3,
         TraditionalChineseV3,
+        TeluguV4,
         TeluguV3,
         KannadaV3,
+        TamilV4,
         TamilV3,
         LatinV3,
+        ArabicV4,
         ArabicV3,
         CyrillicV3,
+        DevanagariV4,
         DevanagariV3,
     };
 }

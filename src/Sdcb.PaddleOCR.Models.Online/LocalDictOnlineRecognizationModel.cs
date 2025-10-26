@@ -47,7 +47,7 @@ public record LocalDictOnlineRecognizationModel(string Name, string DictName, Ur
     /// <summary>
     /// v5 server model for Chinese recognition
     /// </summary>
-    public static LocalDictOnlineRecognizationModel ChineseServerV5 => new("PP-OCRv5_server_rec_infer.tar", "", new Uri("https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv5_server_rec_infer.tar"), ModelVersion.V5);
+    public static LocalDictOnlineRecognizationModel ChineseServerV5 => new("PP-OCRv5_server_rec_infer", "", new Uri("https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv5_server_rec_infer.tar"), ModelVersion.V5);
 
     /// <summary>
     /// v5 model for English recognition

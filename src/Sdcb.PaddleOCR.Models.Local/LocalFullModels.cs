@@ -5,16 +5,20 @@
 /// </summary>
 public static class LocalFullModels
 {
-    // delete because too large(>100MB)
     ///// <summary>
     ///// Chinese server v4, also support English and digits.
     ///// </summary>
-    //public static FullOcrModel ChineseServerV4 => new(LocalDetectionModel.ChineseServerV4, LocalClassificationModel.ChineseMobileV2, LocalRecognizationModel.ChineseV4);
+    public static FullOcrModel ChineseServerV5 => new(LocalDetectionModel.ChineseServerV5, LocalClassificationModel.ChineseMobileV2, LocalRecognizationModel.ChineseServerV5);
 
     /// <summary>
-    /// Chinise v5 version
+    /// Chinese v5 version
     /// </summary>
     public static FullOcrModel ChineseV5 => new(LocalDetectionModel.ChineseV5, LocalClassificationModel.ChineseMobileV2, LocalRecognizationModel.ChineseV5);
+
+    /// <summary>
+    /// English v4 version.
+    /// </summary>
+    public static FullOcrModel EnglishV5 => new(LocalDetectionModel.EnglishV5, LocalClassificationModel.ChineseMobileV2, LocalRecognizationModel.EnglishV5);
 
     /// <summary>
     /// Chinese v4, also support English and digits.

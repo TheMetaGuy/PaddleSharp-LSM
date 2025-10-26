@@ -40,6 +40,12 @@ public record OnlineDetectionModel(string Name, Uri Uri, ModelVersion Version)
     public static OnlineDetectionModel ChineseV5 => new("PP-OCRv5_mobile_det_infer", new Uri("https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv5_mobile_det_infer.tar"), ModelVersion.V5);
 
     /// <summary>
+    /// v5 model for English detection
+    /// (Size:4.8MB)
+    /// </summary>
+    public static OnlineDetectionModel EnglishV5 => new("en_PP-OCRv5_mobile_det_infer", new Uri("https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/en_PP-OCRv5_mobile_det_infer.tar"), ModelVersion.V5);
+
+    /// <summary>
     /// v4 model, supporting Chinese, English, multilingual text detection
     /// (Size: 4.66M)
     /// </summary>

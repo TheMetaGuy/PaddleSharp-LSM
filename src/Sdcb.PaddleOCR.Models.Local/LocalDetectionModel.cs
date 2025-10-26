@@ -32,15 +32,20 @@ public class LocalDetectionModel : DetectionModel
     public static LocalDetectionModel ChineseV5 => new("mobile-zh-det", ModelVersion.V5);
 
     /// <summary>
+    /// Gets the English language detection model for version 5.
+    /// </summary>
+    public static LocalDetectionModel EnglishV5 => new("mobile-en-det", ModelVersion.V5);
+
+    /// <summary>
+    /// Chinese server inference detection model for version 5. Supports Chinese, English, and multilingual text detection.
+    /// It's much larger ( approx 90 MB) but more accurate than the mobile version models 
+    /// </summary>
+    public static LocalDetectionModel ChineseServerV5 => new("server-zh-det", ModelVersion.V5);
+
+    /// <summary>
     /// Chinese detection v4 model used by PaddleOCR to detect text from an image, supporting multiple languages(Size: 4.6M).
     /// </summary>
     public static LocalDetectionModel ChineseV4 => new("ch_PP-OCRv4_det", ModelVersion.V4);
-
-    // delete because too large (>100MB)
-    ///// <summary>
-    ///// Chinese detection v4 server inference model used by PaddleOCR to detect text from an image, supporting multiple languages (Size: 110M).
-    ///// </summary>
-    //public static LocalDetectionModel ChineseServerV4 => new("detv4_teacher_inference", ModelVersion.V4);
 
     /// <summary>
     /// Original lightweight model, supporting Chinese, English, multilingual text detection(Size: 3.8M).
@@ -62,8 +67,10 @@ public class LocalDetectionModel : DetectionModel
     /// </summary>
     public static LocalDetectionModel[] All => new[]
     {
+        ChineseV5,
+        ChineseServerV5,
+        EnglishV5,
         ChineseV4,
-        //ChineseServerV4,
         ChineseV3,
         EnglishV3,
         MultiLanguageV3,
