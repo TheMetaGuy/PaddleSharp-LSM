@@ -9,6 +9,8 @@
     <IsTestProject>true</IsTestProject>
 
     <NoWarn>CA1416</NoWarn>
+
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
