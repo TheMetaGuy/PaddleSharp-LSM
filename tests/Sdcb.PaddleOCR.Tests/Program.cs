@@ -13,6 +13,9 @@ internal class Program
         Environment.SetEnvironmentVariable("GLOG_v", "0");
         FullOcrModel model = await OnlineFullModels.ChineseV5.DownloadAsync();
         FastCheck(model);
+
+        model = await OnlineFullModels.EnglishV5.DownloadAsync();
+        FastCheck(model);
     }
 
     private static void FastCheck(FullOcrModel model)
