@@ -10,7 +10,7 @@
     <RepositoryUrl>https://github.com/TheMetaGuy/PaddleSharp-LSM.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Sdcb;AI;Paddle;OCR;PaddleOCR;PaddleSharp</PackageTags>
-    <VersionPrefix>3.0</VersionPrefix>
+    <VersionPrefix>3.9.0</VersionPrefix>
     <PackageIcon>icon.jpg</PackageIcon>
     <Description>Known models for PaddleOCR</Description>
     <Authors>sdcb</Authors>

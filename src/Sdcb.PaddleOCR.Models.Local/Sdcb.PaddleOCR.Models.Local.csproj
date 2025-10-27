@@ -10,7 +10,7 @@
     <RepositoryUrl>https://github.com/TheMetaGuy/PaddleSharp-LSM.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Sdcb;AI;Paddle;OCR;PaddleOCR;PaddleSharp</PackageTags>
-    <VersionPrefix>2.5</VersionPrefix>
+    <VersionPrefix>3.9.0</VersionPrefix>
     <PackageIcon>icon.jpg</PackageIcon>
     <Description>Known models for PaddleOCR</Description>
     <Authors>sdcb</Authors>
@@ -49,8 +49,7 @@
   <ItemGroup Condition="'$(Configuration)' == 'Release'">
     <PackageReference Include="Sdcb.PaddleOCR.Models.LocalV3" Version="2.7.0.1" />
     <PackageReference Include="Sdcb.PaddleOCR.Models.LocalV4" Version="2.7.0.1" />
-    <PackageReference Include="Sdcb.PaddleOCR.Models.LocalV5" Version="3.0.0" />
-
+    <PackageReference Include="Sdcb.PaddleOCR.Models.LocalV5" Version="3.9.0" />
     <PackageReference Include="Sdcb.PaddleOCR.Models.Shared" Version="2.7.0.1" />
     <PackageReference Include="Sdcb.PaddleOCR" Version="3.0.1" />
   </ItemGroup>
