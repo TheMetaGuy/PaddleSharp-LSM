@@ -10,24 +10,41 @@
 
 ---
 
-This is a forked version of [PaddleSharp](https://github.com/sdcb/PaddleSharp), with the following added **locally for offline** (no internet required) use: 
+This is a forked version of [PaddleSharp](https://github.com/sdcb/PaddleSharp), with the following added **locally for offline** (no internet required) usage: 
 - V5 English mobile OCR model (For English - much better accuracy and speed than the English V4 or the V5 Chinese server model)
-- V5 Chinese Server OCR model (This is multi-lingual - English and other languages. It's better than the mobile version but much slower )
+- V5 Chinese server OCR model (This is multi-lingual - English and other languages. It's better than the mobile version but much slower )
 
 also 
-- A powershell script has been added which collates the NuGet packages needed for PaddleSharp-LSM into a local folder for offline use. *Steps*: 
+- A powershell script has been added which collates the NuGet packages needed for PaddleSharp-LSM into a local folder for offline use.
+- The English mobile V5 and Chinese Server V5 OCR models have also been added to the list of on-line models.
+- The English Character Dictionary has added Pound, Euro and Cents symbols to improve recognition accuracy for these characters.
+- Tests have been added for the new models and also for Handwriting recognition using the V5 model.
+
+---
+### Release notes 📝
+**2025-Oct-27**:
+
+1. Also please note that these updates have only been tested on Windows x64. The changes should not affect other platforms but I have not tested them.
+2. Using the Nuget packages locally : Steps*: 
 	- *Use the Visual Studio 'Pack' command to create the NuGet package for EACH sub-project then*
 	- *from the 'Build' folder run '.\collect-nuget-packages-offline.ps1.* 
 	- *Any external projects using this library will need to set the NuGet manager 'Package Source'to the local 'localNuget' folder* 
-
-- The English mobile V5 and Chinese Server V5 OCR models have also been added to the list of on-line models.
-
+3. The packages updated here are 
+	- Sdcb.PaddleOCR.Models.Local
+	- Sdcb.PaddleOCR.Models.LocalV5,
+	- Sdcb.PaddleSharp.Models.Online
+	- Sdcb.PaddleSharp.Models.Shared   
+	For the **other PaddleSharp packages it's probably better to use the original PaddleSharp packages from NuGet.org** or from the original repository
+as I've notied that the version numbers on NuGet are more up to date than the versions in this forked repository for some of the other packages.
+ 
 ---
+
+### From The original PaddleSharp repo
 
 ## NuGet Packages/Docker Images 📦
 
 ### Release notes 📝
-Please checkout [this page 📄](https://github.com/TheMetaGuy/PaddleSharp-LSM/releases).
+Please checkout [this page 📄](https://github.com/sdcb/PaddleSharp/releases).
 
 ### Infrastructure packages 🏗️
 
