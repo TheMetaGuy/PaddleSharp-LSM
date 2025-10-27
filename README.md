@@ -1,4 +1,4 @@
-﻿# PaddleSharp 🌟 [![main](https://github.com/TheMetaGuy/PaddleSharp-LSM/actions/workflows/main.yml/badge.svg)](https://github.com/TheMetaGuy/PaddleSharp-LSM/actions/workflows/main.yml) [![QQ](https://img.shields.io/badge/QQ_Group-579060605-52B6EF?style=social&logo=tencent-qq&logoColor=000&logoWidth=20)](https://jq.qq.com/?_wv=1027&k=K4fBqpyQ)
+﻿# PaddleSharp-LSM 🌟 [![main](https://github.com/TheMetaGuy/PaddleSharp-LSM/actions/workflows/main.yml/badge.svg)](https://github.com/TheMetaGuy/PaddleSharp-LSM/actions/workflows/main.yml) 
 
 💗 .NET Wrapper for `PaddleInference` C API, support **Windows**(x64) 💻, NVIDIA Cuda 11.8+ based GPU 🎮 and **Linux**(Ubuntu-22.04 x64) 🐧, currently contained following main components:
 
@@ -7,6 +7,22 @@
 * [RotationDetection 🔄](./docs/rotation-detection.md) use Baidu's official `text_image_orientation_infer` model to detect text picture's rotation angle(`0, 90, 180, 270`).
 * [PaddleNLP ChineseSegmenter 📚](./docs/paddlenlp-lac.md) support `PaddleNLP` Lac Chinese segmenter model, supports tagging/customized words.
 * [Paddle2Onnx 🔄](./docs/paddle2onnx.md) Allow user export `ONNX` model using `C#`.
+
+---
+
+This is a forked version of [PaddleSharp](https://github.com/sdcb/PaddleSharp), with the following added **locally for offline** (no internet required) use: 
+- V5 English mobile OCR model (For English - much better accuracy and speed than the English V4 or the V5 Chinese server model)
+- V5 Chinese Server OCR model (This is multi-lingual - English and other languages. It's better than the mobile version but much slower )
+
+also 
+- A powershell script has been added which collates the NuGet packages needed for PaddleSharp-LSM into a local folder for offline use. *Steps*: 
+	- *Use the Visual Studio 'Pack' command to create the NuGet package for EACH sub-project then*
+	- *from the 'Build' folder run '.\collect-nuget-packages-offline.ps1.* 
+	- *Any external projects using this library will need to set the NuGet manager 'Package Source'to the local 'localNuget' folder* 
+
+- The English mobile V5 and Chinese Server V5 OCR models have also been added to the list of on-line models.
+
+---
 
 ## NuGet Packages/Docker Images 📦
 
